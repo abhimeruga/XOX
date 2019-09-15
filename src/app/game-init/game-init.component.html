@@ -1,0 +1,31 @@
+<div style="position: relative">
+  <div class="row-adjust row">
+    <input type="button" class="button" #buttonone id="button-one" value=" " (click)="changeEleValues(buttonone)">
+
+    <input type="button" class="button" #buttontwo id="button-two" value=" " (click)="changeEleValues(buttontwo)">
+
+    <input type="button" class="button" #buttonthree id="button-three" value=" " (click)="changeEleValues(buttonthree)">
+  </div>
+
+  <div class="row-adjust row">
+    <input type="button" class="button" #buttonfour id="button-four" value=" " (click)="changeEleValues(buttonfour)">
+
+    <input type="button" class="button" #buttonfive id="button-five" value=" " (click)="changeEleValues(buttonfive)">
+
+    <input type="button" class="button" #buttonsix id="button-six" value=" " (click)="changeEleValues(buttonsix)"> 
+  </div>
+  <div class="row-adjust row">
+    <input type="button" class="button" #buttonseven id="button-seven" value=" " (click)="changeEleValues(buttonseven)">
+
+    <input type="button" class="button" #buttoneight id="button-eight" value=" " (click)="changeEleValues(buttoneight)">
+
+    <input type="button" class="button" #buttonnine id="button-nine" value=" " (click)="changeEleValues(buttonnine)">
+  </div>
+
+  <h3 *ngIf="isWinner">
+    {{winnerName}}
+  </h3>
+  <input type="button" class="spacing" value="Reset" (click)="reset(buttonone,buttontwo,buttonthree,buttonfour,
+                                              buttonfive,buttonsix,buttonseven,buttoneight,buttonnine)">
+
+</div>

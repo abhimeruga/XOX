@@ -1,0 +1,20 @@
+.button {
+  background-color: white; 
+  border: 1px solid black;
+  color: red;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 50px;
+}
+
+.spacing {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.row-adjust {
+  height: 49px;
+  position: relative;
+}
