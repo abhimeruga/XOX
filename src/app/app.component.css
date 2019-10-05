@@ -1,0 +1,12 @@
+.send-style {
+    background-color: rgb(20, 8, 24)!important;
+    color: lightblue!important;
+    width: 150px;
+  }
+
+.heading-3T {
+    font-size: 30px;
+    color: rgb(20, 8, 24)!important;
+    font-family: serif;
+    text-decoration: underline;
+}
