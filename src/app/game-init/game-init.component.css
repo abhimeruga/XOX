@@ -75,6 +75,7 @@
 }
 
 .message-username {
+  color: rgb(77, 75, 74)!important;
   margin: 0px;
     padding-bottom: 1px;
     padding-top: 1px;

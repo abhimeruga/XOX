@@ -64,10 +64,13 @@ export class GameInitComponent implements OnInit, OnDestroy {
   }
 
   send(message, messageList) {
+    let sendTime = '';
     if (message.value !== '') {
       const messageValues: any = {};
       messageValues.message = message.value;
+      sendTime = new Date().toLocaleString();
       messageValues.username = this.firebaseService.username1;
+      messageValues.time = sendTime;
       this.messages.push(messageValues);
       this.firebaseService.sendMessage(this.firebaseService.keyword, this.messages);
       message.value = '';
