@@ -32,7 +32,7 @@
 
 .list-overflow {
   background-color: rgb(231, 82, 132)!important;
-  width: 379px;
+  width: 320px;
   height: 298px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -55,6 +55,7 @@
 .background-accent-color {
     padding-top:1px;
     background-color: rgb(173, 80, 118)!important;
+    width: 320px;
   }
 .white-text {
     color: #FFF!important;
@@ -62,7 +63,7 @@
 
 .message-wrap {
   word-wrap: break-word;
-    width: 362px;
+    width: 300px;
     font-size: 15px;
     font-weight: bold;
     font-family: monospace;
