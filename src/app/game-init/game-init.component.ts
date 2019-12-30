@@ -21,7 +21,7 @@ export class GameInitComponent implements OnInit, OnDestroy {
   ngOnInit() {
     let scrollEle: any;
     this.initValues();
-    this.titleHead = this.firebaseService.username1 + 'Vs' + this.firebaseService.username2;
+    this.titleHead = this.firebaseService.username1 + ' Vs ' + this.firebaseService.username2;
     scrollEle = document.getElementById('messageScroll');
     scrollEle.scrollTop = Math.max(0, scrollEle.scrollHeight - scrollEle.offsetHeight);
   }

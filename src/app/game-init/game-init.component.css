@@ -1,5 +1,5 @@
 .button {
-  background-color: #d84f5ce6;
+  background-color: #4f5dd8e6;
   border: 1px solid black;
   color: #eabde9;
   padding: 15px 15px;
@@ -31,7 +31,7 @@
 }
 
 .list-overflow {
-  background-color: rgb(231, 82, 132)!important;
+  background-color: rgb(62, 143, 190)!important;
   width: 320px;
   height: 298px;
   overflow-y: auto;
@@ -47,14 +47,14 @@
     color: #3F51B5!important;
   }
 .accent-color {
-   color: rgb(214, 40, 191)!important;
+   color: rgb(74, 84, 168)!important;
   }
 .background-primary-color {
     background-color: #3F51B5!important;
   }
 .background-accent-color {
     padding-top:1px;
-    background-color: rgb(173, 80, 118)!important;
+    background-color: rgb(36, 79, 119)!important;
     width: 320px;
   }
 .white-text {
