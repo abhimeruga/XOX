@@ -1,7 +1,7 @@
 .button {
-  background-color: #4f5dd8e6;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
   border: 1px solid black;
-  color: #eabde9;
+  color: black;
   padding: 15px 15px;
   text-align: center;
   text-decoration: none;
@@ -31,7 +31,7 @@
 }
 
 .list-overflow {
-  background-color: rgb(62, 143, 190)!important;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
   width: 320px;
   height: 298px;
   overflow-y: auto;
@@ -54,7 +54,7 @@
   }
 .background-accent-color {
     padding-top:1px;
-    background-color: rgb(36, 79, 119)!important;
+    background: linear-gradient(to bottom, #ff99cc 0%, #33ccff 100%);
     width: 320px;
   }
 .white-text {
@@ -76,7 +76,8 @@
 }
 
 .message-username {
-  color: rgb(77, 75, 74)!important;
+  color: #88174f!important;
+  background-color:#33ccff !important;
   margin: 0px;
     padding-bottom: 1px;
     padding-top: 1px;
