@@ -8,7 +8,20 @@
   display: inline-block;
   font-size: 16px;
   width: 50px;
+  height: 50px!important;
   outline: none;
+}
+.box{
+  border-radius: 14px;
+    left: 50%;
+    top:50%;
+    position: absolute;
+    width:360px;
+    padding:10px,40px,20px;
+    margin: 10px,0px;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    text-align: center; 
 }
 
 .spacing {
@@ -16,8 +29,13 @@
   margin-bottom: 5px;
 }
 .row-adjust {
+  margin: 0px 65px auto;
   height: 49px;
   position: relative;
+}
+.header-xox-game{
+  margin-top:10px;
+  margin-left:42px!important;
 }
 
 .message-list {
@@ -31,17 +49,24 @@
 }
 
 .list-overflow {
-  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-  width: 320px;
+  background: linear-gradient(to bottom, #071149 0%, #6e1341 100%); 
+  width: 100%;
   height: 298px;
   overflow-y: auto;
   overflow-x: hidden;
+  margin:2px, 0px, 0px!important;
+  padding:5px, 2px, 0px!important;
+  border-bottom:2px solid rgb(219, 25, 64)!important;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 
 .send-style {
-  background-color: crimson!important;
+  background-color: rgb(219, 25, 64)!important;
   color: lightblue!important;
   margin-left: 10px;
+  outline:none;
+  transition: .05s;
 }
 .primary-color {
     color: #3F51B5!important;
@@ -63,7 +88,7 @@
 
 .message-wrap {
   word-wrap: break-word;
-    width: 300px;
+    width: 100%;
     font-size: 15px;
     font-weight: bold;
     font-family: monospace;
@@ -72,17 +97,35 @@
     padding-bottom: 1px;
     padding-left: 5px;
     padding-right: 5px;
-    border-bottom: double;
+    border-bottom: thin;
+    background-color: linear-gradient(to bottom, #5e0431 0%, #022d3b 100%);
+    color:rgb(165, 160, 160);
+}
+.no-msgs{
+  padding-top: 50px;
+  color:white;
+}
+.header-game{
+  color:rgb(219, 213, 213);
+}
+.send-message{
+  width:250px!important;
+  border:none;
+  background: none;
+  color:white;
+  border-bottom: 1px solid rgb(245, 243, 243);
+  outline:none;
+  margin-bottom: 20px!important;
+  padding-bottom: 4px;
 }
 
 .message-username {
-  color: #88174f!important;
-  background-color:#33ccff !important;
+  color: rgba(29, 134, 219, 0.7)!important;
+  background: linear-gradient(to bottom, #071149 0%, #6e1341 100%) !important;
   margin: 0px;
-    padding-bottom: 1px;
-    padding-top: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
+  padding: 1px, 5px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .color-test {

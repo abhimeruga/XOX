@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameInitComponent } from './game-init/game-init.component';
+import { Auth } from './service/auth';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -94,7 +95,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTooltipModule,
     MatTreeModule,
     ],
-  providers: [],
+  providers: [Auth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

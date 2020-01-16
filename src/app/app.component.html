@@ -1,20 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div *ngIf="!matchFound" class="back-ground">
-    <div>
+<div *ngIf="!matchFound">
+    <form class="back-ground">
         <h1 class="heading-3T"> Tic Tac Toe (3T) </h1>
-        <mat-form-field style="width: 265px!important;">
-            <input color="accent" matInput type="text" placeholder="User Name" #user>
-        </mat-form-field><br>
-        <mat-form-field style="width: 265px!important;">
-            <input color="accent" matInput type="text" type="password" placeholder="Key Word" #keyWord>
-        </mat-form-field><br>
-        <button class="send-style" mat-button color="primary" (click)="login(user,keyWord)">
-      <mat-icon *ngIf="isLoading">
-        <mat-spinner diameter="20">
-        </mat-spinner>
-      </mat-icon>{{loginLoading}}
-    </button>
-        <h3>{{errorMsg}}</h3>
-    </div>
+            <input type="text" class="txt" placeholder="User Name" #user />
+            <input type="text" class="txt" type="password" placeholder="Key Word" #keyWord />
+        <button class="send-style"  (click)="login(user,keyWord,$event)">
+            <span class="spinner-border" *ngIf="isLoading">
+            </span>{{loginLoading}}
+        </button>
+        <h3 class="error-msg">{{errorMsg}}</h3>
+    </form>
 </div>
 <router-outlet></router-outlet>

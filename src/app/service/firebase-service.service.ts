@@ -16,6 +16,7 @@ export class FirebaseServiceService {
   private authState: any;
   public gameErrors = '';
   public loginErrors = '';
+  public isLoggedIn = false;
 
   constructor(public db: AngularFirestore, public afAuth: AngularFireAuth) {
     this.afAuth.authState.subscribe(auth => {

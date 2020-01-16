@@ -21,7 +21,9 @@ export class AppComponent {
   public userName2 = '';
   public isLoading = false;
   public loginLoading = 'Login';
-  public login(user, key) {
+
+  public login(user, key, event) {
+    event.preventDefault();
     this.loginLoading = 'Loading...';
     this.isLoading = true;
     this.firebase.login(user.value, key.value).
@@ -41,6 +43,7 @@ export class AppComponent {
                   console.log('login in');
                   this.setInitialValues(fuid['key'], fuid['username']);
                   if (this.matchFound) {
+                    this.firebase.isLoggedIn = true;
                     this.isLoading = false;
                     this.router.navigate(['/game']);
                   }

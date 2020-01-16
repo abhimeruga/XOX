@@ -1,45 +1,47 @@
-<div class="container align-center " style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
-    <div class="row">
-        <div class="col align-self-center background-accent-color">
-            <div style="position: relative; text-align: center;">
-                <h3 style="margin:0px!important">
-                    {{this.firebaseService.username1}}
-                </h3>
-                <h3 style="margin:0px!important">Vs</h3>
-                <h3 style="margin:0px!important">{{this.firebaseService.username2}}</h3>
+<div class="box" style="background: linear-gradient(to bottom, #071149 0%,#eb2a1d 80%, #6e1341 100%);">
+    <div>
+        <div >
+            <div >
+                <h5 class="header-game" style="padding-top:3px;margin:0px!important">
+                   kjvhksdgf {{this.firebaseService.username1}}
+                </h5>
+                <h5 class="header-game"  style="margin:0px!important">Vs</h5>
+                <h5 class="header-game" style="margin:0px!important">uvkutjau{{this.firebaseService.username2}}</h5>
 
-                <div class="row-adjust row">
-                    <input type="button" class="button" #buttonone id="button-one" value={{eventValues[0]}}
-                        (click)="changeEleValues(buttonone)">
-
-                    <input type="button" class="button" #buttontwo id="button-two" value={{eventValues[1]}}
-                        (click)="changeEleValues(buttontwo)">
-
-                    <input type="button" class="button" #buttonthree id="button-three" value={{eventValues[2]}}
-                        (click)="changeEleValues(buttonthree)">
+                <div class="header-xox-game">
+                    <div class="row-adjust row">
+                        <input type="button" class="button" #buttonone id="button-one" value={{eventValues[0]}}
+                            (click)="changeEleValues(buttonone)">
+    
+                        <input type="button" class="button" #buttontwo id="button-two" value={{eventValues[1]}}
+                            (click)="changeEleValues(buttontwo)">
+    
+                        <input type="button" class="button" #buttonthree id="button-three" value={{eventValues[2]}}
+                            (click)="changeEleValues(buttonthree)">
+                    </div>
+    
+                    <div class="row-adjust row">
+                        <input type="button" class="button" #buttonfour id="button-four" value={{eventValues[3]}}
+                            (click)="changeEleValues(buttonfour)">
+    
+                        <input type="button" class="button" #buttonfive id="button-five" value={{eventValues[4]}}
+                            (click)="changeEleValues(buttonfive)">
+    
+                        <input type="button" class="button" #buttonsix id="button-six" value={{eventValues[5]}}
+                            (click)="changeEleValues(buttonsix)">
+                    </div>
+                    <div class="row-adjust row">
+                        <input type="button" class="button" #buttonseven id="button-seven" value={{eventValues[6]}}
+                            (click)="changeEleValues(buttonseven)">
+    
+                        <input type="button" class="button" #buttoneight id="button-eight" value={{eventValues[7]}}
+                            (click)="changeEleValues(buttoneight)">
+    
+                        <input type="button" class="button" #buttonnine id="button-nine" value={{eventValues[8]}}
+                            (click)="changeEleValues(buttonnine)">
+                    </div>
+    
                 </div>
-
-                <div class="row-adjust row">
-                    <input type="button" class="button" #buttonfour id="button-four" value={{eventValues[3]}}
-                        (click)="changeEleValues(buttonfour)">
-
-                    <input type="button" class="button" #buttonfive id="button-five" value={{eventValues[4]}}
-                        (click)="changeEleValues(buttonfive)">
-
-                    <input type="button" class="button" #buttonsix id="button-six" value={{eventValues[5]}}
-                        (click)="changeEleValues(buttonsix)">
-                </div>
-                <div class="row-adjust row">
-                    <input type="button" class="button" #buttonseven id="button-seven" value={{eventValues[6]}}
-                        (click)="changeEleValues(buttonseven)">
-
-                    <input type="button" class="button" #buttoneight id="button-eight" value={{eventValues[7]}}
-                        (click)="changeEleValues(buttoneight)">
-
-                    <input type="button" class="button" #buttonnine id="button-nine" value={{eventValues[8]}}
-                        (click)="changeEleValues(buttonnine)">
-                </div>
-
                 <h3 *ngIf="isWinner">
                     {{winnerName}}
                 </h3>
@@ -47,17 +49,17 @@
 
 
                 <ul class="message-list list-overflow" id="messageScroll" #messageList>
-                    <h3 *ngIf="messages.length === 0">No Messages</h3>
+                    <h3 class="no-msgs" *ngIf="messages.length === 0">No Messages</h3>
                     <div *ngIf="!(messages.length === 0)">
                         <li *ngFor=" let message of messages" [ngStyle]="{'text-align': message.username === firebaseService.username1 ? 'right' : 'left',
-        'background-color': message.username === firebaseService.username1 ? '#2c89a5' : '#3133a5' }">
+        'background': message.username === firebaseService.username1 ? 'linear-gradient(to bottom, #5e0431 0%, #022d3b 60%)' : 'linear-gradient(to bottom, #022d3b 0%, #5e0431 60%)' }">
                             <h5 class="message-username">{{message.time}}</h5>
                             <p class="message-wrap">{{message.message}}</p>
                         </li>
                     </div>
                 </ul>
-                <mat-form-field style="width: 205px!important;"> <input color="accent" matInput type="text"
-                        placeholder="Insert Message" #message></mat-form-field>
+                 <input class="send-message"  type="text"
+                        placeholder="Type your Message" #message>
 
                 <button class="send-style" mat-button color="accent" (click)="send(message, messageList)">Send</button>
 
